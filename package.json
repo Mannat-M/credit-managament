@@ -1,0 +1,25 @@
+{
+  "name": "cms",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "express-validator": "^6.14.2",
+    "mongoose": "^6.7.2",
+    "nodemon": "^2.0.20"
+  },
+  "scripts": {
+    "dev": "nodemon index",
+    "start": "node index",
+    "build": "npm install && cd client/ && npm install && npm run build",
+    "heroku-prebuild": "cd client/ && npm install && npm run build"
+  },
+  "cacheDirectories": [
+    "node_modules",
+    "client/node_modules"
+  ]
+}
